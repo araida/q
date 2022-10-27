@@ -7,21 +7,21 @@ jobs:
     environment:
       MANIFEST_BRANCH: "android-10.0"
       VERSION: "2.9.1" # Change as necessary
-      VENDOR: "" # Mandatory
-      CODENAME: "" # Mandatory
-      FLAVOR: "" # Mandatory:: Input "eng" or "userdebug"
-      MAINTAINER: "PBRP Team"
+      VENDOR: "xiaomi" # Mandatory
+      CODENAME: "garden" # Mandatory
+      FLAVOR: "eng" # Mandatory:: Input "eng" or "userdebug"
+      MAINTAINER: "symmetricalbyte"
       TEST_BUILD: 'true'
       # PB_OFFICIAL: 'true' # REQUIRED-FOR-TEAM:: Uncomment only for Stable Official builds
       # PB_ENGLISH: 'true' # Use if necessary
       # EXTRA_CMD: "" # OPTIONAL COMMANDS:: USE WITHIN DOUBLE-QUOTE
       CHANGELOG: |
         What's been done?
-        - Update done for xx
+        - literally nothing, same as before
         What's fixed?
-        - Fixed yy things
-          - Which is actually Changed by ZZ
-        And something else
+        - Fixed no things
+          - literally nothing
+        And nothing else
     working_directory: /home/builder/ # This MUST NOT Be Changed
     steps:
       - setup_remote_docker:
