@@ -73,7 +73,7 @@ echo -e "\nGetting the Device Tree on place"
 if [[ "${CIRCLE_PROJECT_USERNAME}" == "PitchBlackRecoveryProject" ]]; then
   git clone --quiet --progress https://$GitHubName:$GITHUB_TOKEN@github.com/PitchBlackRecoveryProject/${CIRCLE_PROJECT_REPONAME} -b ${CIRCLE_BRANCH} device/${VENDOR}/${CODENAME}
 else
-  git clone --quiet --progress https://github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME} -b ${CIRCLE_BRANCH} device/${VENDOR}/${CODENAME}
+  git clone --quiet --progress https://github.com/aradia/device_xiaomi_garden device/${VENDOR}/${CODENAME}
 fi
 
 if [[ -n ${USE_SECRET_BOOTABLE} ]]; then
